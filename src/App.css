@@ -1,0 +1,329 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(16px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  background-image: url("https://i.pinimg.com/originals/80/a9/75/80a9750d105c49b56beaaa84a6ff2667.jpg");
+  background-size: contain;
+}
+
+
+.Middle {
+  position: relative;
+  height: 60%;
+  /* background-color: #280604;
+  color: white; */
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px black;
+}
+
+.Load {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Loader {
+  height: 120px;
+  border-radius: 50%;
+  /* background-color: wheat; */
+  border: 16px solid white;
+  /* border-top: 16px solid lightskyblue; */
+  width: 120px;
+  animation: loader infinite 1s linear;
+}
+
+@keyframes loader {
+  0% {
+    border-top: 16px solid lightskyblue;
+  }
+
+  25% {
+    border-right: 16px solid lightskyblue;
+  }
+
+  50% {
+    border-bottom: 16px solid lightskyblue;
+  }
+
+  100% {
+    border-left: 16px solid lightskyblue;
+  }
+
+}
+
+input {
+  margin-top: 16px;
+  border-radius: 5px;
+  margin-left: 100px;
+  height: 25px;
+  font-size: 18px;
+  outline: none;
+  width: 60%;
+  padding: 5px;
+}
+
+.button {
+  height: 37px;
+  background-color: rgb(82, 133, 174);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.Lang {
+  height: 37px;
+  background-color: rgb(82, 133, 174);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+
+}
+
+.temperature {
+  height: 150px;
+  width: 50%;
+  margin-left: 40px;
+
+  /* background-color: yellow; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.TempIcon {
+  display: flex;
+}
+
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 50%;
+  /* background-color: #61dafb; */
+}
+
+.FullNav {
+  height: 75px;
+  font-size: 50px;
+  text-align: center;
+  background-color: #5285AE;
+  color: white;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:600px) {
+
+  .Full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    background-image: url("https://i.pinimg.com/originals/80/a9/75/80a9750d105c49b56beaaa84a6ff2667.jpg");
+    background-size: contain;
+  }
+
+
+  .Middle {
+    position: relative;
+    height: 80%;
+    /* background-color: #280604;
+    color: white; */
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px black;
+  }
+
+  .Load {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Loader {
+    height: 80px;
+    border-radius: 50%;
+    /* background-color: wheat; */
+    border: 12px solid white;
+    /* border-top: 16px solid lightskyblue; */
+    width: 80px;
+    animation: loader infinite 1s linear;
+  }
+
+  @keyframes loader {
+    0% {
+      border-top: 12px solid lightskyblue;
+    }
+
+    25% {
+      border-right: 12px solid lightskyblue;
+    }
+
+    50% {
+      border-bottom: 12px solid lightskyblue;
+    }
+
+    100% {
+      border-left: 12px solid lightskyblue;
+    }
+
+  }
+
+  input {
+    margin-top: 11px;
+    border-radius: 5px;
+    margin-left: 20px;
+    height: 18px;
+    font-size: 13px;
+    outline: none;
+    width: 60%;
+    padding: 5px;
+  }
+
+  .button {
+    height: 28px;
+    background-color: rgb(82, 133, 174);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    margin-left: 20px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .heading h1 {
+    font-size: 18px;
+    /* margin-left: 10px; */
+  }
+
+  .time h3 {
+    /* margin-top: 5px; */
+    font-size: 16px;
+  }
+
+  .Label {
+    margin: 7px 0px 7px 15px !important;
+  }
+
+  .Lang {
+    height: 32px;
+    background-color: rgb(82, 133, 174);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+
+  }
+
+  .temperature {
+    height: 150px;
+    width: 80%;
+    margin-left: 40px;
+
+    /* background-color: yellow; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .TempIcon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .TempIcon h1 {
+    font-size: 25px;
+  }
+
+  .FullNav {
+    height: 45px;
+    font-size: 37px;
+    text-align: center;
+    background-color: #5285AE;
+    color: white;
+    width: 100vw;
+    margin-bottom: 150px;
+    position: absolute;
+    top: 0;
+  }
+
+  .Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin: 0px 0px 25px 15px !important;
+    width: 90%;
+    /* background-color: #61dafb; */
+  }
+
+}
